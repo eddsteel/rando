@@ -1,0 +1,12 @@
+[Unit]
+Description=Rando
+
+[Service]
+Type=simple
+Restart=always
+ExecStart=/opt/rando/bin/rando
+KillMode=process
+TimeoutSec=180
+
+[Install]
+WantedBy=network.target
